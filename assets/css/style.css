@@ -384,6 +384,7 @@ html {
 body {
     background: #ffffff;
     min-height: 100%;
+    overflow-x: hidden;
 }
 
 h1, h2, h3, h4 {
@@ -393,7 +394,7 @@ h1, h2, h3, h4 {
     font-family: "Znikomit", sans-serif;
 }
 
-h1, h2, h3, h4, p {
+h1, h2, h3, h4, p, a {
     text-align: center;
     color: #0b381e;
 }
@@ -628,15 +629,34 @@ section {
 .gallery .container {
     display: flex;
     justify-content: center;
-    width: 60%;
+    width: 90%;
 }
 
 .gallery img {
-    height: 60vh;
+    min-height: 20vh;
+    max-height: 50vh;
+    max-width: 100%;
+}
+
+.gallery__items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.gallery__item {
+    padding: 15px;
+    display: flex;
+    justify-content: center;
 }
 
 .calendar {
     margin-top: 0px;
+}
+
+.calendar img {
+    max-width: 300px;
+    max-height: 300px;
 }
 
 .calendar span {
@@ -650,7 +670,7 @@ section {
 
 .calendar__calendarbox .calendarbox__box {
     position: relative;
-    background-image: url(../img/5.jpg);
+    background-image: url(../img/calendar.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 300px;
@@ -698,6 +718,32 @@ section {
 
 .calendar__sides .rightSide h3 {
     font-size: 40px;
+    margin-top: 0px;
+}
+
+.calendar__tg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.calendar__tg img {
+    max-width: 150px;
+    max-height: 150px;
+}
+
+.dresscode {
+    background-image: url(../img/fon.dc.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.dresscode .container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 @media screen and (max-width: 1237px) {
@@ -707,6 +753,14 @@ section {
 
     .welcome .container {
         width: 80%;
+    }
+
+    .gallery img {
+        max-height: 40vh;
+    }
+
+    .gallery__item {
+        width: 50%;
     }
 }
 
@@ -737,6 +791,10 @@ section {
     .history h2 {
         font-size: 50px;
     }
+
+    .gallery__item {
+        padding: 15px 5px;
+    }
 }
 
 @media screen and (max-width: 850px) {
@@ -755,6 +813,10 @@ section {
 
     .history__img {
         height: 50vh;
+    }
+
+    .gallery img {
+        max-height: 28vh;
     }
 }
 
@@ -813,6 +875,7 @@ section {
 
     .about h2 {
         font-size: 22px;
+        padding-top: 10px;
     }
 
     .about span {
@@ -869,6 +932,24 @@ section {
         height: 55vh;
     }
 
+    .gallery {
+        margin-top: 20px;
+    }
+
+    .gallery img {
+        max-height: 40vh;
+    }
+
+    .gallery__items {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .gallery__item {
+        width: 100%;
+        padding: 10px 0px 5px 0px;
+    }
+
     .calendar__sides {
         flex-direction: column;
         padding: 15px 0px;
@@ -876,6 +957,10 @@ section {
 
     .calendar .rightSide {
         padding: 0px;
+    }
+
+    .calendar .rightSide h3 {
+        margin: 40px 0px 10px 0px;
     }
 }
 
@@ -924,6 +1009,14 @@ section {
 @media screen and (max-width: 450px) {
     .welcome__img {
         height: 33vh;
+    }
+
+    .gallery .container {
+        width: 100%;
+    }
+
+    .gallery img {
+        max-height: 30vh;
     }
 }
 

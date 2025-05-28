@@ -6,6 +6,14 @@
     .welcome .container {
         width: 80%;
     }
+
+    .gallery img {
+        max-height: 40vh;
+    }
+
+    .gallery__item {
+        width: 50%;
+    }
 }
 
 @media screen and (max-width: 1074px) {
@@ -35,6 +43,10 @@
     .history h2 {
         font-size: 50px;
     }
+
+    .gallery__item {
+        padding: 15px 5px;
+    }
 }
 
 @media screen and (max-width: 850px) {
@@ -53,6 +65,10 @@
 
     .history__img {
         height: 50vh;
+    }
+
+    .gallery img {
+        max-height: 28vh;
     }
 }
 
@@ -111,6 +127,7 @@
 
     .about h2 {
         font-size: 22px;
+        padding-top: 10px;
     }
 
     .about span {
@@ -167,6 +184,24 @@
         height: 55vh;
     }
 
+    .gallery {
+        margin-top: 20px;
+    }
+
+    .gallery img {
+        max-height: 40vh;
+    }
+
+    .gallery__items {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .gallery__item {
+        width: 100%;
+        padding: 10px 0px 5px 0px;
+    }
+
     .calendar__sides {
         flex-direction: column;
         padding: 15px 0px;
@@ -174,6 +209,10 @@
 
     .calendar .rightSide {
         padding: 0px;
+    }
+
+    .calendar .rightSide h3 {
+        margin: 40px 0px 10px 0px;
     }
 }
 
@@ -222,6 +261,14 @@
 @media screen and (max-width: 450px) {
     .welcome__img {
         height: 33vh;
+    }
+
+    .gallery .container {
+        width: 100%;
+    }
+
+    .gallery img {
+        max-height: 30vh;
     }
 }
 
