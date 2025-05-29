@@ -379,12 +379,16 @@ template {
 
 html {
     height: 100%;
+    max-width: 100%;
 }
 
 body {
+    width: 100%;
+    max-width: 100%;
     background: #ffffff;
     min-height: 100%;
     overflow-x: hidden;
+    position: relative;
 }
 
 h1, h2, h3, h4 {
@@ -428,6 +432,7 @@ section {
 
 .container {
     max-width: 100%;
+    overflow: hidden;
 }
 
 .welcome {
@@ -649,6 +654,7 @@ section {
 .calendar {
     margin-top: 0px;
     position: relative;
+    overflow-x: hidden;
 }
 
 .calendar img {
@@ -732,32 +738,6 @@ section {
 
 .calendar__timer span {
     font-weight: bold;
-}
-
-.calendar__alex, .calendar__toma {
-    position: absolute;
-}
-
-.calendar__alex img, .calendar__toma img {
-    height: 250px;
-}
-
-.calendar__alex {
-    top: 220px;
-    right: -20px;
-}
-
-.calendar__alex img {
-    border-radius: 33%;
-}
-
-.calendar__toma {
-    top: -35px;
-    left: -30px;
-}
-
-.calendar__toma img {
-    border-radius: 0 0 50% 50%;
 }
 
 .dresscode {
