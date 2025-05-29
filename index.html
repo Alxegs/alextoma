@@ -3,12 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="assets/css/style.min.css">
-    <!-- <link
-       rel="stylesheet"
-       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    /> -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
-    <!-- Useful meta tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
@@ -21,25 +17,22 @@
              <div class="welcome__header">
                 <h1>Свадьба</h1>
              </div>
-             <div class="welcome__subheader">
+             <div data-aos="fade-right" class="welcome__subheader">
                 <h2>Александр & Тамара</h2>
              </div>
-             <div class="welcome__img">
+             <div data-aos="fade-left" class="welcome__img">
                 
              </div>
              <div class="welcome__when">
                 <div class="when__data">
                    <p>13.07.2025</p>
                 </div>
-                <div class="when__time">
-                   <p>16:00</p>
-                </div>
              </div>
           </div>
        </section>
        <section class="about">
           <div class="container">
-             <div class="leftSide">
+             <div data-aos="fade-right" class="leftSide">
                 <div class="about__img">
                    <div class="imgbox">
                       
@@ -47,10 +40,10 @@
                 </div>
              </div>
              <div class="rightSide">
-                <div class="about__header">
+                <div data-aos="fade-down" class="about__header">
                    <h2><span>Разделите с нами</span> этот важный день...</h2>
                 </div>
-                <div class="about__text">
+                <div data-aos="fade-down" class="about__text">
                    <div class="about__textbox">
                       <p>Совсем скоро настанет тот день, когда время замедляет свой бег, когда сердце говорит громче любых слов. В этот особенный, неповторимый миг мы ждём вас, ведь ваше присутствие — как благословение для нашей любви.</p>
                       <p>Мы прошли через испытания, преодолели невзгоды, но каждый шаг лишь укреплял нашу веру в то, что истинное счастье — это выбрать друг друга снова и снова.</p>
@@ -63,10 +56,10 @@
        <section class="history">
           <div class="container">
              <div class="leftSide">
-                <div class="history__header">
+                <div data-aos="fade-down" class="history__header">
                    <h2>Наша история <span>любви</span></h2>
                 </div>
-                <div class="history__text">
+                <div data-aos="fade-up-right" class="history__text">
                    <h4>Воспоминания невесты ...</h4>
                    <p>На уроке информатики 12 октября 2012 года было невыносимо скучно. Кто-то начал рисовать "Виселицу" на последней странице тетради. Ты присоединился не сразу — сначала просто смотрел, как я ошибаюсь с буквами, а потом рассмеялся и присоеденился к нам! </p>
                    <p>Двенадцать лет спустя я понимаю: все важное начинается именно так. С нечаянного взгляда. Со случайной игры. С твоего смеха среди скучного урока."</p>
@@ -76,7 +69,7 @@
              </div>
              <div class="rightSide">
                 <div class="history__img">
-                   <div class="history__imgbox">
+                   <div data-aos="flip-left" class="history__imgbox">
     
                    </div>
                 </div>
@@ -86,13 +79,13 @@
        <section class="gallery">
           <div class="container">
              <div class="gallery__items">
-                <div class="gallery__item">
+                <div  data-aos="fade-up-right" class="gallery__item">
                    <img src="assets/img/g1 (1).jpg" alt="#">
                 </div>
                 <!-- <div class="gallery__item">
                    <img src="assets/img/g1 (2).jpg" alt="#">
                 </div> -->
-                <div class="gallery__item">
+                <div data-aos="fade-up-left" class="gallery__item">
                    <img src="assets/img/g1 (3).jpg" alt="#">
                 </div>
              </div>
@@ -100,10 +93,10 @@
        </section>
        <section class="dresscode">
           <div class="container">
-             <div class="dresscode__header">
+             <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" class="dresscode__header">
                 <h2>Дресс код</h2>
              </div>
-             <div class="dresscode__text">
+             <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" class="dresscode__text">
                 <p>Ваше присутствие — главное!</p>
                 <p>Выбирайте наряд по душе — без ограничений в цвете и фасоне. Главное, чтобы вам было комфортно и радостно!</p>
                 <p>Ваша улыбка — лучший аксессуар. 😊</p>
@@ -112,11 +105,11 @@
        </section>
        <section class="calendar">
           <div class="container">
-             <div class="calendar__header">
+             <div data-aos="fade-up" class="calendar__header">
                 <h2>Мы ждем <span>Вас</span></h2>
              </div>
              <div class="calendar__sides">
-                <div class="leftSide">
+                <div data-aos="fade-up-right" class="leftSide">
                    <div class="calendar__calendarbox">
                       <div class="calendarbox__box">
                          <div class="box__calendar">
@@ -125,7 +118,7 @@
                       </div>
                    </div>
                 </div>
-                <div class="rightSide">
+                <div data-aos="fade-up-left" class="rightSide">
                    <div class="calendar__date">
                       <h3>13.07.2025</h3>
                    </div>
@@ -136,10 +129,18 @@
                 </div>
              </div>
              <div class="calendar__timer">
-                <div class="timerheader">
-                   <p>До нашей свадьбы осталось</p>
+                <div data-aos="zoom-out" class="timerheader">
+                   <h2>До нашей свадьбы осталось</h2>
                 </div>
                 <script src="//megatimer.ru/get/3bf1db46a47c6649546261485eb83f51.js"></script>
+             </div>
+             <div class="calendar__alextoma">
+                <div data-aos="fade-up-right" class="calendar__toma">
+                   <img src="assets/img/toma.png" alt="#">
+                </div>
+                <div data-aos="fade-left" class="calendar__alex">
+                   <img src="assets/img/alex.png" alt="#">
+                </div>
              </div>
           </div>
        </section>
@@ -148,5 +149,12 @@
     <footer class="footer">
     
     </footer>
-    <script src="assets/js/script.min.js"></script></body>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/script.min.js"></script>
+    <script>
+      AOS.init({
+       duration: 1000,
+    
+      });
+    </script></body>
 </html>

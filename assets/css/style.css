@@ -493,11 +493,6 @@ section {
     padding: 0px 10px 0px 10px;
 }
 
-.welcome__when .when__time {
-    padding: 0px 10px 0px 10px;
-    border-left: 1px solid black;
-}
-
 .welcome__when p {
     padding: 0px;
     margin: 0;
@@ -636,6 +631,7 @@ section {
     min-height: 20vh;
     max-height: 50vh;
     max-width: 100%;
+    box-shadow: 0px 5px 10px 4px rgba(34, 60, 80, 0.3);
 }
 
 .gallery__items {
@@ -652,6 +648,7 @@ section {
 
 .calendar {
     margin-top: 0px;
+    position: relative;
 }
 
 .calendar img {
@@ -733,14 +730,51 @@ section {
     max-height: 150px;
 }
 
+.calendar__timer span {
+    font-weight: bold;
+}
+
+.calendar__alex, .calendar__toma {
+    position: absolute;
+}
+
+.calendar__alex img, .calendar__toma img {
+    height: 250px;
+}
+
+.calendar__alex {
+    top: 220px;
+    right: -20px;
+}
+
+.calendar__alex img {
+    border-radius: 33%;
+}
+
+.calendar__toma {
+    top: -35px;
+    left: -30px;
+}
+
+.calendar__toma img {
+    border-radius: 0 0 50% 50%;
+}
+
 .dresscode {
     background-image: url(../img/fon.dc.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 40px 0px;
 }
 
 .dresscode .container {
     width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dresscode__text {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -795,6 +829,24 @@ section {
     .gallery__item {
         padding: 15px 5px;
     }
+
+    .calendar__toma {
+        left: -90px;
+    }
+}
+
+@media screen and (max-width: 944px) {
+    .calendar__alex img, .calendar__toma img {
+        height: 150px;
+    }
+
+    .calendar__alex {
+        right: -10px;
+    }
+
+    .calendar__toma {
+        left: -15px;
+    }
 }
 
 @media screen and (max-width: 850px) {
@@ -817,6 +869,10 @@ section {
 
     .gallery img {
         max-height: 28vh;
+    }
+
+    .calendar__alex {
+        top: -35px;
     }
 }
 
@@ -859,7 +915,7 @@ section {
     }
 
     .calendar__timer #timer3bf1db46a47c6649546261485eb83f51 span {
-        font-size: 30px !important;
+        font-size: 50px !important;
         padding: 0px 3px 0px 3px !important;
     }
 }
@@ -950,6 +1006,10 @@ section {
         padding: 10px 0px 5px 0px;
     }
 
+    .dresscode {
+        margin-top: 20px;
+    }
+
     .calendar__sides {
         flex-direction: column;
         padding: 15px 0px;
@@ -961,6 +1021,22 @@ section {
 
     .calendar .rightSide h3 {
         margin: 40px 0px 10px 0px;
+    }
+
+    .calendar__timer h2 {
+        font-size: 20px;
+    }
+
+    .calendar__alex img, .calendar__toma img {
+        height: 100px;
+    }
+
+    .calendar__alex {
+        right: -5px;
+    }
+
+    .calendar__toma {
+        left: -7px;
     }
 }
 
@@ -1052,6 +1128,14 @@ section {
     .history__img {
         height: 33vh;
     }
+
+    .calendar__alex img, .calendar__toma img {
+        height: 90px;
+    }
+
+    .calendar__timer #timer3bf1db46a47c6649546261485eb83f51 span {
+        font-size: 40px !important;
+    }
 }
 
 @media screen and (max-width: 334px) {
@@ -1062,5 +1146,13 @@ section {
     .calendar .calendarbox__box {
         width: 250px;
         height: 250px;
+    }
+
+    .calendar__timer h2 {
+        font-size: 18px;
+    }
+
+    .calendar__timer #timer3bf1db46a47c6649546261485eb83f51 span {
+        font-size: 32px !important;
     }
 }

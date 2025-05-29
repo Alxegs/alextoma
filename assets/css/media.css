@@ -47,6 +47,24 @@
     .gallery__item {
         padding: 15px 5px;
     }
+
+    .calendar__toma {
+        left: -90px;
+    }
+}
+
+@media screen and (max-width: 944px) {
+    .calendar__alex img, .calendar__toma img {
+        height: 150px;
+    }
+
+    .calendar__alex {
+        right: -10px;
+    }
+
+    .calendar__toma {
+        left: -15px;
+    }
 }
 
 @media screen and (max-width: 850px) {
@@ -69,6 +87,10 @@
 
     .gallery img {
         max-height: 28vh;
+    }
+
+    .calendar__alex {
+        top: -35px;
     }
 }
 
@@ -111,7 +133,7 @@
     }
 
     .calendar__timer #timer3bf1db46a47c6649546261485eb83f51 span {
-        font-size: 30px !important;
+        font-size: 50px !important;
         padding: 0px 3px 0px 3px !important;
     }
 }
@@ -202,6 +224,10 @@
         padding: 10px 0px 5px 0px;
     }
 
+    .dresscode {
+        margin-top: 20px;
+    }
+
     .calendar__sides {
         flex-direction: column;
         padding: 15px 0px;
@@ -213,6 +239,22 @@
 
     .calendar .rightSide h3 {
         margin: 40px 0px 10px 0px;
+    }
+
+    .calendar__timer h2 {
+        font-size: 20px;
+    }
+
+    .calendar__alex img, .calendar__toma img {
+        height: 100px;
+    }
+
+    .calendar__alex {
+        right: -5px;
+    }
+
+    .calendar__toma {
+        left: -7px;
     }
 }
 
@@ -304,6 +346,14 @@
     .history__img {
         height: 33vh;
     }
+
+    .calendar__alex img, .calendar__toma img {
+        height: 90px;
+    }
+
+    .calendar__timer #timer3bf1db46a47c6649546261485eb83f51 span {
+        font-size: 40px !important;
+    }
 }
 
 @media screen and (max-width: 334px) {
@@ -314,5 +364,13 @@
     .calendar .calendarbox__box {
         width: 250px;
         height: 250px;
+    }
+
+    .calendar__timer h2 {
+        font-size: 18px;
+    }
+
+    .calendar__timer #timer3bf1db46a47c6649546261485eb83f51 span {
+        font-size: 32px !important;
     }
 }
