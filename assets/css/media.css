@@ -7,12 +7,20 @@
         width: 80%;
     }
 
+    .about__img {
+        height: 50vh;
+    }
+
     .gallery img {
         max-height: 40vh;
     }
 
     .gallery__item {
         width: 50%;
+    }
+
+    .history__img {
+        height: 55vh;
     }
 }
 
@@ -37,7 +45,7 @@
 
     .history__img {
         margin: 0px;
-        height: 60vh;
+        height: 45vh;
     }
 
     .history h2 {
@@ -78,11 +86,11 @@
     }
 
     .history p, .history a {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .history__img {
-        height: 50vh;
+        height: 40vh;
     }
 
     .gallery img {
@@ -185,8 +193,16 @@
         width: 100%;
     }
 
+    .history {
+        padding: 20px 0px;
+    }
+
     .history h2 {
         font-size: 60px;
+    }
+
+    .history p, .history a {
+        font-size: 20px;
     }
 
     .history .container {
@@ -221,11 +237,7 @@
 
     .gallery__item {
         width: 100%;
-        padding: 10px 0px 5px 0px;
-    }
-
-    .dresscode {
-        margin-top: 20px;
+        padding: 15px 0px;
     }
 
     .calendar__sides {

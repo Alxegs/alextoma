@@ -407,6 +407,10 @@ h2 {
     font-size: 28px;
 }
 
+h4 {
+    font-size: 24px;
+}
+
 p, a {
     font-size: 20px;
     font-family: DolomanPavljenko;
@@ -428,11 +432,11 @@ section {
     margin-top: 40px;
     display: flex;
     justify-content: center;
+    overflow: hidden;
 }
 
 .container {
     max-width: 100%;
-    overflow: hidden;
 }
 
 .welcome {
@@ -559,12 +563,15 @@ section {
 .history {
     display: flex;
     justify-content: center;
+    margin: 0px;
+    padding-top: 40px;
 }
 
 .history h2 {
     font-family: Caravan;
     font-size: 70px;
     font-weight: normal;
+    margin: 0;
 }
 
 .history .container {
@@ -579,6 +586,7 @@ section {
 
 .history .leftSide p, .history .leftSide a {
     text-align: left;
+    text-indent: 1em;
 }
 
 .history .rightSide {
@@ -593,7 +601,7 @@ section {
     position: relative;
     content: "";
     width: 60%;
-    height: 70vh;
+    height: 60vh;
     margin-left: 30px;
     z-index: 1;
 }
@@ -624,6 +632,10 @@ section {
     outline: solid #ece6e6;
     box-shadow: 8px 8px 12px 0px rgba(34, 60, 80, 0.2);
     z-index: 1;
+}
+
+.gallery {
+    padding-bottom: 20px;
 }
 
 .gallery .container {
@@ -720,8 +732,12 @@ section {
 }
 
 .calendar__sides .rightSide h3 {
-    font-size: 40px;
+    font-size: 48px;
     margin-top: 0px;
+}
+
+.calendar__sides .rightSide h4, .calendar__sides .rightSide a {
+    font-size: 20px;
 }
 
 .calendar__tg {
@@ -745,6 +761,7 @@ section {
     background-repeat: no-repeat;
     background-size: cover;
     padding: 40px 0px;
+    margin-top: 0px;
 }
 
 .dresscode .container {
@@ -769,12 +786,20 @@ section {
         width: 80%;
     }
 
+    .about__img {
+        height: 50vh;
+    }
+
     .gallery img {
         max-height: 40vh;
     }
 
     .gallery__item {
         width: 50%;
+    }
+
+    .history__img {
+        height: 55vh;
     }
 }
 
@@ -799,7 +824,7 @@ section {
 
     .history__img {
         margin: 0px;
-        height: 60vh;
+        height: 45vh;
     }
 
     .history h2 {
@@ -840,11 +865,11 @@ section {
     }
 
     .history p, .history a {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .history__img {
-        height: 50vh;
+        height: 40vh;
     }
 
     .gallery img {
@@ -947,8 +972,16 @@ section {
         width: 100%;
     }
 
+    .history {
+        padding: 20px 0px;
+    }
+
     .history h2 {
         font-size: 60px;
+    }
+
+    .history p, .history a {
+        font-size: 20px;
     }
 
     .history .container {
@@ -983,11 +1016,7 @@ section {
 
     .gallery__item {
         width: 100%;
-        padding: 10px 0px 5px 0px;
-    }
-
-    .dresscode {
-        margin-top: 20px;
+        padding: 15px 0px;
     }
 
     .calendar__sides {
